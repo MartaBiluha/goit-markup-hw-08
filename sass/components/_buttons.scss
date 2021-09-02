@@ -1,0 +1,135 @@
+.primary-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: $secondaryTextColor;
+    background-color: $accentColor;
+    padding: 10px 32px;
+    margin: auto;
+    border-color: $accentColor;
+  }
+
+  .modal__closing-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: $primaryBackgroundColor;
+    margin-right: 8px;
+    margin-top: 8px;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    @include transitioning (fill);
+
+    &:hover ,
+    &:focus {
+    fill: $accentColor;
+  }
+  }
+  
+  .form-field__button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    color: $secondaryTextColor;
+    background: $accentColor;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    border-color: $accentColor;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    @include transitioning (background-color);
+
+    &:focus {
+        background-color: #188CE8;
+      }
+  
+    }
+    
+    
+    .bottom-form-field__subscribing-button {
+        display: flex;
+        width: 200px;
+        height: 50px;
+        background-color: $accentColor;
+        color: $secondaryTextColor;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.06em;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 12px;
+        border: $accentColor;
+      }
+    
+      .secondary-button-section {
+        list-style-type: none;
+
+        &__item {
+            margin-right: 8px;
+
+            &:last-child {
+                margin-right: 0;
+              }
+          }
+
+          &__button {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: $titleTextColor;
+            padding: 6px 22px;
+            background: #f5f4fa;
+            border-radius: 4px;
+            border-width: 0;
+            @include transitioning (color, background-color, box-shadow);
+            
+            &:hover,
+            &:focus {
+        background-color: $accentColor;
+        color: $secondaryTextColor;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      }
+        
+        }
+      }
+      
+      .container .secondary-button-section {
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        margin-bottom: 50px;
+      }
+      
+      
+      
+      
+      
+      
+      button {
+        cursor: pointer;
+      }

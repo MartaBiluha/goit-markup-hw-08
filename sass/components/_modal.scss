@@ -1,0 +1,36 @@
+.backdrop {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    @include transitioning (opacity);
+    z-index: 100;
+
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+
+        &.modal {
+            transform: translate(-50%, -50%) scale(0.5);
+            opacity: 0;
+            }
+        }
+  }
+  
+  
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    min-width: 528px;
+    min-height: 581px;
+    background-color: $primaryBackgroundColor;
+    @include transitioning (transform, opacity);
+    
+  }  
+  
