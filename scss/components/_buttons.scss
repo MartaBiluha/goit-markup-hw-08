@@ -76,18 +76,68 @@
         border-radius: 4px;
         justify-content: center;
         align-items: center;
-        margin-left: 12px;
+        margin-top: 20px;
         border: $accentColor;
       }
-    
-      .secondary-button-section {
+
+      .menu-toggle{
+        background-color: $primaryBackgroundColor;
+        box-shadow: $primaryBackgroundColor;
+        margin-left: auto;
+        border: none;
+        
+        &__icon-open {
+          background-color: $primaryBackgroundColor;
+          border-color: $primaryBackgroundColor;
+        }
+
+        &:focus {
+          fill: $accentColor;
+        }
+
+        
+      }
+
+      @media (min-width: 768px) {
+        .menu-toggle {
+          display: none;
+        }
+      }
+
+      .js-close-menu {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 25px;
+        margin-top: 21px;
+
+        &:focus {
+          fill: $accentColor;
+        }
+      }
+
+      .secondary-button-section { 
         list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        width: 480px;
+        padding-top: 60px;
+        padding-bottom: 40px;
+        padding-left: 0;
+        margin: 0;
+        
+        align-items: flex-start;
 
         &__item {
             margin-right: 8px;
+            margin-bottom: 21px;
+
+            &:nth-child(4) {
+              margin-bottom: 0;
+            }
 
             &:last-child {
                 margin-right: 0;
+                margin-bottom: 0;
               }
           }
 
@@ -115,21 +165,10 @@
         
         }
       }
-      
-      .container .secondary-button-section {
-        display: flex;
-        justify-content: center;
-        margin-top: 0;
-        margin-bottom: 0;
-        padding: 0;
-        margin-bottom: 50px;
-      }
-      
-      
-      
-      
+        
       
       
       button {
         cursor: pointer;
       }
+      

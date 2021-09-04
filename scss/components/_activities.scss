@@ -14,7 +14,12 @@
       }
   }
   
-  
+  @media screen and (max-width:1119px) {
+   .section-activity {
+       display: none;
+   }
+  }
+
   .activity-list {
     list-style-type: none;
     margin-top: 0;
@@ -57,10 +62,4 @@
         justify-content: center;
         }
   }
-  
- 
-  
-  
-  
- 
   

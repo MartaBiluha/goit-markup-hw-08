@@ -27,8 +27,8 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
-    min-width: 528px;
-    min-height: 581px;
+    min-width: 450px;
+    min-height: 609px;
     background-color: $primaryBackgroundColor;
     @include transitioning (transform, opacity);
     

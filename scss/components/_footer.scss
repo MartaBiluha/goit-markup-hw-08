@@ -1,0 +1,128 @@
+footer {
+    background-color: $secondaryBackgroundColor;
+    padding-top: 60px;
+    padding-bottom: 130px;
+  }
+  
+  address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $secondaryTextColor;
+    margin-top: 20px;
+  }
+
+    
+    .bottom-contact-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 480px;
+        margin-bottom: 60px;
+    }
+
+    .bottom-contact-section__logo {
+      font-family: Raleway;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 1.19;
+      letter-spacing: 0.03em;
+      color: $secondaryTextColor;
+      text-decoration: none;
+      
+  
+      &--blue {
+          font-family: $secondaryFontFamily;
+          font-weight: 700;
+          font-size: 26px;
+          line-height: 1.19;
+          letter-spacing: 0.03em;
+          color: $accentColor;
+        }
+    }
+    
+    .bottom-contact-list {
+      list-style-type: none;
+      padding-left: 0;
+      margin-bottom: 0px;
+  
+      &__link {
+          font-size: 14px;
+          line-height: 1.7;
+          letter-spacing: 0.03em;
+          color: rgba(255, 255, 255, 0.6);
+          text-decoration: none;
+          @include transitioning (color);
+          
+          &:hover,
+          &:focus {
+          color: $accentColor;
+              }
+        }
+  
+        &__item:first-child {
+          margin-bottom: 9px;
+        }
+    }
+
+    .bottom-social-network-link-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 480px;
+        margin-bottom: 60px;
+
+    
+        &__title {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: $secondaryTextColor;
+            margin-bottom: 20px;
+          } 
+      }
+      
+      .bottom-social-network-list {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding-left: 0;
+        margin-top: 0;
+        
+    
+        &__link {
+            display: flex;
+            width: 44px;
+            height: 44px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: #44454E;
+            fill: $primaryBackgroundColor;
+            @include transitioning (background-color);
+    
+            &:hover,
+            &:focus {
+                background-color: $accentColor;
+      }
+          }
+        
+        &__item {
+            margin-right: 10px;
+    
+            &:last-child {
+                margin-right: 0;
+              }
+            }
+            &__icon {
+                margin: auto;
+                }
+      }
+      

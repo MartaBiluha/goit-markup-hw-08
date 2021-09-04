@@ -13,13 +13,22 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css
 ">
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
 <body>
     <header>
         <div class="container">
         <a class="logo" href="#"><span class="logo logo--blue">Web</span>Studio</a>
+        <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu">
+            <svg class="menu-toggle__icon-open" width="40" height="40">
+              <use href="./images/symbol-defs.svg#icon-menu-open"></use>
+            </svg>
+        </button>
+        <div class="header-menu">
         <nav>
             <ul class="navigation">
                 <li class="navigation__item">
@@ -52,10 +61,57 @@
             </li>
         </ul>
         </div>
+        </div>
 
     </header>
 
     <main>
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+              <svg class="menu-toggle__icon-close" width ="40" height="40">
+               <use href="./images/symbol-defs.svg#icon-menu-close"></use>
+              </svg>
+            </button>
+            <ul class="navigation navigation--drop-down">
+                <li class="navigation__item navigation__item--drop-down">
+                    <a class="navigation__link navigation__link--drop-down" href="#">Студия</a>
+                </li>
+                <li class="navigation__item navigation__item--drop-down">
+                    <a class="navigation__link navigation__link--drop-down" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="navigation__item navigation__item--drop-down">
+                    <a class="navigation__link navigation__link--drop-down" href="#">Контакты</a>
+                </li>
+            </ul>
+            <ul class="contacts contacts--drop-down">
+                <li class="contacts__item contacts__item--drop-down ">
+                    <a class="contacts__link contacts__link--drop-down phone" href="tel:+380961111111">
+                        +38 096 111 11 11
+                    </a>
+                </li>
+                <li class="contacts__item  contacts__item--drop-down ">
+                    <a class="contacts__link contacts__link--drop-down mail" href="mailto:info@devstudio.com">
+                        info@devstudio.com
+                    </a>
+                </li>
+            </ul>
+            <ul class="menu-social-networks">
+                <li class="menu-social-networks__item">
+                    <a class="menu-social-networks__link" href="#">Instagram</a>
+                </li>
+                <li class="menu-social-networks__item">
+                    <a class="menu-social-networks__link" href="#">Twitter</a>
+                </li>
+                <li class="menu-social-networks__item">
+                    <a class="menu-social-networks__link" href="#">Facebook</a>
+                </li>
+                <li class="menu-social-networks__item">
+                    <a class="menu-social-networks__link" href="#">Linkedin</a>
+                </li>
+            </ul>
+        </div>
+
         <section class="portfolio-section">
         <div class="container">
         <ul class="secondary-button-section">
@@ -227,7 +283,7 @@
         </div>
         <form action="#" class="bottom-form-field">
             <label class="bottom-form-field__subscribing-section">
-                Подпишитесь на рассылку
+                <span class="bottom-form-field__subscribing-title">Подпишитесь на рассылку</span>
                 <input type="email" name="footer-email" class="bottom-form-field__email" placeholder="E-mail">
             </label>
             <button type="submit" class="bottom-form-field__subscribing-button">
@@ -241,7 +297,13 @@
     </div>
     </footer>
 
-
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+  <script defer src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
