@@ -870,7 +870,6 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 450px;
   height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
@@ -1107,7 +1106,6 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 170px;
   height: 92px;
   fill: #AFB1B8;
   -webkit-box-align: center;
@@ -1168,7 +1166,6 @@ address {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  width: 480px;
   margin-bottom: 60px;
 }
 
@@ -1233,7 +1230,6 @@ address {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 480px;
   margin-bottom: 60px;
 }
 
